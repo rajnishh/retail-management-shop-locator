@@ -30,7 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyC2AkiIEyirAyDZ2YgRsoga6UeJjySz4y0',
+      apiKey: 'GOOGLE_MAP_API_KEY',
       libraries: ['places']
     }),
     FormsModule,
