@@ -30,7 +30,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     AppRoutingModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
-      apiKey: 'GOOGLE_MAP_API_KEY',
+      apiKey: '',
       libraries: ['places']
     }),
     FormsModule,
