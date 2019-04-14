@@ -1,0 +1,17 @@
+/// <reference types="@types/googlemaps" />
+import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core';
+
+@Component({
+  selector: 'app-panel',
+  templateUrl: './panel.component.html',
+  styleUrls: ['./panel.component.scss']
+})
+export class PanelComponent implements OnInit {
+
+  constructor(
+  ) { }
+
+  ngOnInit() {
+  }
+
+}

@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+body{
+    background-color: white!important;
+}
+app-add-panel{
+    height: 498px;
+    width: 300px;
+    float: left;
+    border: 1px solid #ccc;
+    @media(max-width: 480px){
+        width: 100%;
+    }
+}
+// app-panels{
+//     height: 498px;
+//     width: 300px;
+//     float: left;
+//     border: 1px solid #ccc;
+//     @media(max-width: 480px){
+//         width: 100%;
+//     } 
+// }

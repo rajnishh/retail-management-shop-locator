@@ -1,0 +1,41 @@
+spring:
+  profiles.active: local
+
+---
+
+spring :
+  profiles : local
+  
+---
+
+spring :
+  profiles : dev   
+     
+---
+
+spring :
+  profiles : uat
+  
+---
+
+spring :
+  profiles : prod
+  
+---
+
+#Application context path
+server:
+  servlet:
+    context-path: /retail-management-api
+  port: 9090
+
+#Custom Success and Error Messages
+ 
+# MONGODB (MongoProperties)
+spring:
+  data.mongodb.uri: mongodb://localhost:27017/retail_management
+
+ #TimeZone
+app:
+  timeZone: UTC
+  
