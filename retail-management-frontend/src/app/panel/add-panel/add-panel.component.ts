@@ -59,7 +59,6 @@ export class AddPanelComponent implements OnInit {
         });
 
         this.mapApiLoader.load().then(() => {
-          debugger;
           const autocomplete = new google.maps.places.Autocomplete(this.searchElementRef.nativeElement, {
             types: ['address']
           });
@@ -82,7 +81,6 @@ export class AddPanelComponent implements OnInit {
         });
     }
     extractAddressComponents(adressArr){
-      debugger;
       this.street = adressArr[0];
       this.city = adressArr[1];
       const cty: string[] = adressArr[2].split(' ');
@@ -93,7 +91,6 @@ export class AddPanelComponent implements OnInit {
 
     //Get Long and lat from address
     getGeoLocation(address: string): Observable<any> {
-      debugger;
       console.log('Getting address: ', address);
       let geocoder = new google.maps.Geocoder();
       return Observable.create(observer => {
@@ -114,7 +111,6 @@ export class AddPanelComponent implements OnInit {
       // set new latitude, longtitude
       this.mapsService.lat = lat;
       this.mapsService.lng = lng;
-      debugger;
       this.mapsService.newCoordinators.next({
         lat: this.mapsService.lat,
         lng: this.mapsService.lng,
@@ -131,7 +127,6 @@ export class AddPanelComponent implements OnInit {
         if (this.addShopForm.invalid) {
             return;
         }
-        debugger;
         const object: ShopDetails = {
           'lat' : this.mapsService.lat,
           'lng': this.mapsService.lng,

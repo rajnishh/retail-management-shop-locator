@@ -65,14 +65,12 @@ export class SearchPanelComponent implements OnInit {
   }
 
   openWindow(location: Marker, index: number) {
-
     this.mapsService.openWindow.next(index);
     this.zoomToNewLocation(location.lat, location.lng);
   }
 
   distanceToCenter(lat, lng) {
     const R = 6371; // mean radius of earth
-
     const lat1 = this.toRad(this.mapsService.lat);
     const lng1 = this.toRad(this.mapsService.lng);
     const lat2 = this.toRad(lat);

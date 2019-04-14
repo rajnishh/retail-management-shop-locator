@@ -15,7 +15,7 @@ import { MapsService } from './maps.service';
 import { LocationsService } from './locations.service';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -30,11 +30,12 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyC2AkiIEyirAyDZ2YgRsoga6UeJjySz4y0',
+      apiKey: '',
       libraries: ['places']
     }),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    Ng2SearchPipeModule
   ],
   providers: [LocationsService, MapsService],
   bootstrap: [AppComponent]

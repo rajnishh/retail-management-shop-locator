@@ -10,12 +10,13 @@
           spellcheck="off"
           autocomplete="off"
           #search
-          [formControl]="searchControl">
+          [formControl]="searchControl"
+          [(ngModel)]="searchText">
       </div>
     </form>
   
     <ul class="store-list">
-      <li *ngFor="let location of locationList, let i = index">
+      <li *ngFor="let location of locationList | filter:searchText, let i = index ">
           <div class="store" (click)="openWindow(location, i)">
               <div class="title">{{ location.shopName }}</div>
               <div class="web">Category: {{location.category}}</div>
