@@ -1,6 +1,7 @@
 .storelocator-panel {    
     overflow: auto;
     max-width: 300px;
+    
     @media(max-width: 480px){
         max-width: 100%;;
     }

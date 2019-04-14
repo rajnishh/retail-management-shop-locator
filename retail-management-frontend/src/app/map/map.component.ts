@@ -16,7 +16,7 @@ export class MapComponent implements OnInit {
   public zoom: number;
   public openedWindow: number;
 
-  public markers: Marker[] = this.getAndBuildMarkers();
+  public markers: Marker[] = [];
   
   constructor(
     private locationService: LocationsService,
@@ -56,21 +56,17 @@ export class MapComponent implements OnInit {
   }
 
   getAndBuildMarkers(){
-    let markers: Marker[];
     this.locationService.getMarkers()
     .subscribe(
       data => {
-        debugger;
-        markers = data;
+        this.markers = data;
       },
       error => {
           console.log('Error occurred in saving Shop details');
       });
-      return markers;
   }
 
   mapClicked($event: MouseEvent) {
-    debugger;
     console.log($event);
   }
 

@@ -11,6 +11,7 @@ app-search-panel{
     height: 498px;
     width: 300px;
     float: left;
+    overflow-y: scroll;
     border: 1px solid #ccc;
     @media(max-width: 480px){
         width: 100%;
@@ -20,6 +21,7 @@ app-panel{
     height: 498px;
     width: 300px;
     float: left;
+    overflow-y: scroll;
     border: 1px solid #ccc;
     @media(max-width: 480px){
         width: 100%;

@@ -16,8 +16,8 @@ export class SearchPanelComponent implements OnInit {
   @ViewChild('search') public searchElementRef: ElementRef;
 
   public searchControl: FormControl;
-  public locations: Marker[];
-  public locationList: Marker[];
+  public locations: Marker[] = [];
+  public locationList: Marker[] =[];
 
   constructor(
     private mapApiLoader: MapsAPILoader,
@@ -33,7 +33,7 @@ export class SearchPanelComponent implements OnInit {
         this.sortLocations();
       },
       error => {
-          console.log('Error occurred in saving SHop details');
+          console.log('No data available.');
       }
     );
   }
