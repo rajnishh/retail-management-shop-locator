@@ -56,7 +56,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 * Locate the Shop using Name and address.
 * Display shop information in list and in Map.
 
-##ToDos
+### ToDos
 
 * Authentication Implementation (Registration and Login)
 * API Security
