@@ -30,7 +30,6 @@ export class SearchPanelComponent implements OnInit {
       data => {
         this.locations = data;
         this.locationList = this.locations;
-        this.sortLocations();
       },
       error => {
           console.log('No data available.');
@@ -40,6 +39,7 @@ export class SearchPanelComponent implements OnInit {
   ngOnInit() {
     this.searchControl = new FormControl();
     this.getMarkersData();
+    this.sortLocations();
     this.mapApiLoader.load().then(() => {
       const autocomplete = new google.maps.places.Autocomplete(this.searchElementRef.nativeElement, {
         types: ['address']
