@@ -54,7 +54,11 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 * Add the new Retail Shop based on the category. i.e; General Store, Mall, Medical Store and Super Market.
 * Locate the Shop using Name and address.
-* Display shop information in list and in Map.
+* Display shop information in list view and in Map as a marker information when we click on Marker.
+
+## Demo Video
+Demo video can be found here:
+https://drive.google.com/open?id=1iUuSBUwhhsFkQIDmPKEeSG8kTSTJF-Ki
 
 ### ToDos
 
